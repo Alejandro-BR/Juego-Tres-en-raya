@@ -9,7 +9,7 @@ package com.alejandro.tres_en_raya.gui;
 import java.awt.Frame;
 import javax.swing.JFrame;
 
-public class GameFrame extends GeneralFrame {
+public class JuegoFrame extends GeneralFrame {
 
   //////// Atributos
   private static final String TITULO = "TRES EN RAYA";
@@ -19,7 +19,7 @@ public class GameFrame extends GeneralFrame {
   /**
    * Conctuctor de la clase GameFrame.
    */
-  public GameFrame() {
+  public JuegoFrame() {
 
     super();
 
