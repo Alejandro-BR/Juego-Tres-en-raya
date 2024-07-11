@@ -1,5 +1,5 @@
 /**
- * GameFrame: Ventana del juego.
+ * GameFrame: Ventana principal del juego.
  * 
  * @author Alejandro Barrionuevo Rosado
  */
@@ -11,9 +11,17 @@ import javax.swing.JFrame;
 
 public class GameFrame extends GeneralFrame {
 
+  //////// Atributos
   private static final String TITULO = "TRES EN RAYA";
 
+  //////// Contructor
+
+  /**
+   * Conctuctor de la clase GameFrame.
+   */
   public GameFrame() {
+
+    super();
 
     // Estetica
     setTitle(TITULO);
@@ -21,7 +29,7 @@ public class GameFrame extends GeneralFrame {
 
     // Forma y posicion
     setExtendedState(Frame.MAXIMIZED_BOTH); // Pantalla completa
-    
+
     // Opciones
     setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // Cierra el programa al cerra ventana
 

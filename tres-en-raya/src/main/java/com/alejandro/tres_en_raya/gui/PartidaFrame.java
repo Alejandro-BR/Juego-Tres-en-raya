@@ -1,5 +1,5 @@
 /**
- * CreditosFrame: Ventana de los creditos.
+ * PartidaFrame: Ventana que se usa para la partida.
  * 
  * @author Alejandro Barrionuevo Rosado
  */
@@ -8,17 +8,17 @@ package com.alejandro.tres_en_raya.gui;
 
 import javax.swing.JFrame;
 
-public class CreditosFrame extends GeneralFrame {
+public class PartidaFrame extends GeneralFrame {
 
   //////// Atributos
-  private static final String TITULO = "CREDITOS";
+  private static final String TITULO = "PARTIDA";
 
   //////// Contructor
 
   /**
    * Conctuctor de la clase CreditosFrame
    */
-  public CreditosFrame() {
+  public PartidaFrame() {
     
     super();
 
@@ -29,6 +29,4 @@ public class CreditosFrame extends GeneralFrame {
     // Oculta la ventana al cerrarla:
     setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE); 
   }
-
-  //////// Metodos
 }
