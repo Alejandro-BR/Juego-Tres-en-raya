@@ -6,21 +6,24 @@
 
 package com.alejandro.tres_en_raya.gui;
 
+import java.awt.Frame;
 import javax.swing.JFrame;
 
-public class GameFrame extends JFrame {
+public class GameFrame extends GeneralFrame {
 
-  private static final int ANCHO = 800;
-  private static final int ALTURA = 600;
+  private static final String TITULO = "TRES EN RAYA";
 
   public GameFrame() {
-    setTitle("TRES EN RAYA");
 
-    setSize(ANCHO, ALTURA);
-    setVisible(true);
+    // Estetica
+    setTitle(TITULO);
+    // setIconImage(getIconImage());
 
-    setLocationRelativeTo(null); // Centra la ventana en la pantalla
+    // Forma y posicion
+    setExtendedState(Frame.MAXIMIZED_BOTH); // Pantalla completa
+    
+    // Opciones
     setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // Cierra el programa al cerra ventana
-    setResizable(true); // Permite redimensionar la ventana
+
   }
 }
