@@ -15,7 +15,7 @@ public class Main {
         // SwingUtilities.invokeLater(() -> {
         // new GameFrame();
         // });
-        JuegoFrame gameFrame = new JuegoFrame();
+        JuegoFrame juegoFrame = new JuegoFrame();
         CreditosFrame creditosFrame = new CreditosFrame();
         PartidaFrame partidaFrame = new PartidaFrame();
     }
