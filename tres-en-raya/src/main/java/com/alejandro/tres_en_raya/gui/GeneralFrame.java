@@ -9,6 +9,7 @@ package com.alejandro.tres_en_raya.gui;
 import java.awt.Dimension;
 import java.awt.Toolkit;
 import javax.swing.JFrame;
+import java.awt.Image;
 
 public class GeneralFrame extends JFrame {
 
@@ -36,5 +37,24 @@ public class GeneralFrame extends JFrame {
     setLocationRelativeTo(null); // Centra la ventana en la pantalla
     setVisible(true); // Es visible la ventana
     setResizable(true); // Permite redimensionar la ventana
+    setIconImage(getImage()); // Poner el icono
+  }
+
+    //////// Metodos
+
+  /**
+   * Obtener la imagen para el icono.
+   * 
+   * @return Image
+   */
+  protected Image getImage() {
+    String imgPath = "/img/logo.jpg";
+    Image image = Toolkit.getDefaultToolkit().getImage(getClass().getResource(imgPath));
+
+    if (image == null) {
+      System.err.println("No se pudo cargar el icono desde: " + imgPath);
+    }
+
+    return image;
   }
 }
