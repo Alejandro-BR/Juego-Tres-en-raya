@@ -17,6 +17,13 @@ public class CreditosPanel extends GeneralPanel {
   private static final int MARGEN_SUPERIOR = 40;
   private static final Font FUENTE_TITULO = new Font("SansSerif", Font.BOLD, 24);
 
+  //////// Contructor
+
+//   public CreditosPanel() {
+//     setBackground(Color.CYAN);
+//     setOpaque(true);  // Asegura que el fondo se pinte
+// }
+
   //////// Metodos
   @Override
   public void paintComponent(Graphics g) {

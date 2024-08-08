@@ -17,6 +17,12 @@ public class GeneralPanel extends JPanel {
 
   //////// Metodos
 
+  /**
+   * Metodo paintComponent de la 
+   * clase JPanel sobrescrito.
+   *  
+   * @param g Graphics
+   */
   @Override
   protected void paintComponent(Graphics g) {
     super.paintComponents(g);
