@@ -27,5 +27,9 @@ public class JuegoFrame extends GeneralFrame {
     setExtendedState(Frame.MAXIMIZED_BOTH); // Pantalla completa
     // Opciones
     setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // Cierra el programa al cerrar ventana
+    // Panel
+    JuegoPanel juegoPanel = new JuegoPanel();
+    add(juegoPanel);
+
   }
 }
