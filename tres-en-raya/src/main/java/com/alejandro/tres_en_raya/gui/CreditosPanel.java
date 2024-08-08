@@ -1,5 +1,5 @@
 /**
- * JuegoPanel: Panel que se usa en la pantalla principal.
+ * CreditosPanel: Panel que se usa en los creditos.
  * 
  * @author Alejandro Barrionuevo Rosado
  */
@@ -11,10 +11,9 @@ import java.awt.FontMetrics;
 import java.awt.Graphics;
 import java.awt.Color;
 
-public class JuegoPanel extends GeneralPanel {
-
+public class CreditosPanel extends GeneralPanel {
   //////// Atributos
-  private static final String TITULO = "JUEGO TRES EN RAYA";
+  private static final String TITULO = "CREDITOS";
   private static final int MARGEN_SUPERIOR = 40;
   private static final Font FUENTE_TITULO = new Font("SansSerif", Font.BOLD, 24);
 

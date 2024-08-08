@@ -19,16 +19,16 @@ public class CreditosFrame extends GeneralFrame {
    * Conctuctor de la clase CreditosFrame
    */
   public CreditosFrame() {
-    
-    super();
 
+    super();
     // Estetica
     setTitle(TITULO);
-
     // Opciones
     // Oculta la ventana al cerrarla:
-    setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE); 
+    setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
+    // Panel
+    CreditosPanel creditosPanel = new CreditosPanel();
+    add(creditosPanel);
   }
 
-  //////// Metodos
 }
