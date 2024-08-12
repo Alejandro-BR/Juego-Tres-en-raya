@@ -13,22 +13,19 @@ public class CreditosFrame extends GeneralFrame {
   //////// Atributos
   private static final String TITULO = "CREDITOS";
 
-  //////// Contructor
+  //////// Constructor
 
   /**
-   * Conctuctor de la clase CreditosFrame
+   * Constructor de la clase CreditosFrame
    */
   public CreditosFrame() {
-
     super();
-    // Estetica
+    // Estética
     setTitle(TITULO);
     // Opciones
-    // Oculta la ventana al cerrarla:
-    setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
+    setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE); // Oculta la ventana al cerrarla
     // Panel
     CreditosPanel creditosPanel = new CreditosPanel();
     add(creditosPanel);
   }
-
 }
