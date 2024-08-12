@@ -10,9 +10,6 @@ import com.alejandro.tres_en_raya.gui.JuegoFrame;
 
 public class Main {
     public static void main(String[] args) {
-        // SwingUtilities.invokeLater(() -> {
-        // new GameFrame();
-        // });
         JuegoFrame juegoFrame = new JuegoFrame();
     }
 }
