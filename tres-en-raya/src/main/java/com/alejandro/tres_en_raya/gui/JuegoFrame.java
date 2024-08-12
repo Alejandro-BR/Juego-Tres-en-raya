@@ -32,6 +32,8 @@ public class JuegoFrame extends GeneralFrame {
     add(juegoPanel);
   }
 
+  //////// Metodos
+
   /**
    * Mostrar los creditos
    */
