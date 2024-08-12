@@ -7,8 +7,10 @@
 package com.alejandro.tres_en_raya.gui;
 
 import java.awt.Graphics;
+import java.awt.Graphics2D;
 import java.awt.Color;
 import java.awt.Dimension;
+import java.awt.GradientPaint;
 import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
 import java.awt.Insets;
@@ -19,11 +21,9 @@ public class JuegoPanel extends GeneralPanel {
   //////// Atributos
   private JButton botonCreditos;
   private JButton botonJugar;
-  // private JuegoFrame juegoFrame;
 
   //////// Constructor
   public JuegoPanel(JuegoFrame juegoFrame) {
-    // this.juegoFrame = juegoFrame;
 
     // Configurar layout
     setLayout(new GridBagLayout());
@@ -67,7 +67,13 @@ public class JuegoPanel extends GeneralPanel {
   @Override
   public void paintComponent(Graphics g) {
     super.paintComponent(g);
-    g.setColor(new Color(173, 216, 230)); // Azul claro
-    g.fillRect(0, 0, getWidth(), getHeight());
+
+    // Fondo degradado entre blanco y azul claro
+    Graphics2D g2d = (Graphics2D) g;
+    int width = getWidth();
+    int height = getHeight();
+    GradientPaint gp = new GradientPaint(0, 0, Color.WHITE, 0, height, new Color(173, 216, 230));
+    g2d.setPaint(gp);
+    g2d.fillRect(0, 0, width, height);
   }
 }

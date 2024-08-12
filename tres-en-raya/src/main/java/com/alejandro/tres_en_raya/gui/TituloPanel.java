@@ -1,5 +1,5 @@
 /**
- * Modulacion de la clase JuegoPanel
+ * Modulacion de la clase TituloPanel
  * 
  * @author Alejandro Barrionuevo Rosado
  */
@@ -11,7 +11,6 @@ import java.awt.Dimension;
 import java.awt.Font;
 import java.awt.Graphics;
 import java.awt.FontMetrics;
-
 import javax.swing.JPanel;
 
 public class TituloPanel extends JPanel {
@@ -24,6 +23,7 @@ public class TituloPanel extends JPanel {
   //////// Constructor
   public TituloPanel() {
     setPreferredSize(new Dimension(400, 100));
+    setOpaque(false); // Hace que el panel sea transparente
   }
 
   //////// Metodos
@@ -37,11 +37,16 @@ public class TituloPanel extends JPanel {
   @Override
   protected void paintComponent(Graphics g) {
     super.paintComponent(g);
+
+    // Establecer el color del texto
     g.setFont(FUENTE_TITULO);
     g.setColor(Color.BLACK);
+
     FontMetrics metrics = g.getFontMetrics(FUENTE_TITULO);
     int x = (getWidth() - metrics.stringWidth(TITULO)) / 2;
     int y = MARGEN_SUPERIOR + metrics.getAscent();
+
+    // Dibujar el título
     g.drawString(TITULO, x, y);
   }
 }
