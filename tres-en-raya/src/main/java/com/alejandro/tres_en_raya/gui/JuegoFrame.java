@@ -6,7 +6,7 @@
 
 package com.alejandro.tres_en_raya.gui;
 
-import java.awt.Frame;
+// import java.awt.Frame;
 import javax.swing.JFrame;
 
 public class JuegoFrame extends GeneralFrame {
@@ -24,7 +24,7 @@ public class JuegoFrame extends GeneralFrame {
     // Estetica
     setTitle(TITULO);
     // Forma y posición
-    setExtendedState(Frame.MAXIMIZED_BOTH); // Pantalla completa
+    // setExtendedState(Frame.MAXIMIZED_BOTH); // Pantalla completa
     // Opciones
     setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // Cierra el programa al cerrar ventana
     // Panel
