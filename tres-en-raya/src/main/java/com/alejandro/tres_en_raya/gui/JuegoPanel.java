@@ -16,7 +16,6 @@ import java.awt.GridBagLayout;
 import java.awt.Insets;
 import javax.swing.JButton;
 import javax.swing.BorderFactory;
-// import javax.swing.UIManager;
 import java.awt.Font;
 import java.awt.event.FocusEvent;
 import java.awt.event.FocusListener;
@@ -86,11 +85,11 @@ public class JuegoPanel extends GeneralPanel {
     // Efecto hover
     boton.addMouseListener(new java.awt.event.MouseAdapter() {
       public void mouseEntered(java.awt.event.MouseEvent evt) {
-        boton.setBackground(new Color(220, 220, 220)); // Color más oscuro al pasar el ratón
+        boton.setBackground(new Color(220, 220, 220)); // Color mas oscuro al pasar el raton
       }
 
       public void mouseExited(java.awt.event.MouseEvent evt) {
-        boton.setBackground(new Color(240, 240, 240)); // Color original cuando no está el ratón
+        boton.setBackground(new Color(240, 240, 240)); // Color original cuando no esta el ratón
       }
     });
 
@@ -98,7 +97,7 @@ public class JuegoPanel extends GeneralPanel {
     boton.addFocusListener(new FocusListener() {
       @Override
       public void focusGained(FocusEvent e) {
-        boton.setBackground(new Color(200, 200, 200)); // Color más oscuro cuando está enfocado
+        boton.setBackground(new Color(200, 200, 200)); // Color mas oscuro cuando esta enfocado
       }
 
       @Override
